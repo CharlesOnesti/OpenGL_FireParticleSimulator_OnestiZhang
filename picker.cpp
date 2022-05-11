@@ -34,8 +34,8 @@ bool Picker::visit(SgShapeNode &node) {
     const Cvec3 idColor = idToColor(idCounter_);
 
     // DEBUG OUTPUT
-    cerr << idCounter_ << " => " << idColor[0] << ' ' << idColor[1] << ' '
-         << idColor[2] << endl;
+//    cerr << idCounter_ << " => " << idColor[0] << ' ' << idColor[1] << ' '
+//         << idColor[2] << endl;
 
     drawer_.getUniforms().put("uIdColor", idColor);
     return drawer_.visit(node);
@@ -49,8 +49,8 @@ shared_ptr<SgRbtNode> Picker::getRbtNodeAtXY(int x, int y) {
     const int id = colorToId(query);
 
     // DEBUG OUTPUT
-    cerr << int(query.r) << ' ' << int(query.g) << ' ' << int(query.b) << " => "
-         << id << endl;
+//    cerr << int(query.r) << ' ' << int(query.g) << ' ' << int(query.b) << " => "
+//         << id << endl;
 
     return find(id);
 }

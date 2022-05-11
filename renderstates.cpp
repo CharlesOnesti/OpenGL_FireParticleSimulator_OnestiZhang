@@ -91,10 +91,13 @@ void RenderStates::apply() const {
     }
 
     if ((flags & kBlendBit) != (currentRs.flags & kBlendBit)) {
-        if (flags & kBlendBit)
+        if (flags & kBlendBit) {
             ::glEnable(GL_BLEND);
-        else
+            ::glDepthMask(GL_FALSE);
+        } else {
             ::glDisable(GL_BLEND);
+            ::glDepthMask(GL_TRUE);
+        }
         currentRs.flags =
             (currentRs.flags & (~kBlendBit)) | (flags & kBlendBit);
     }
