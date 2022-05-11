@@ -169,4 +169,24 @@ void makeSphere(float radius, int slices, int stacks, VtxOutIter vtxIter,
     }
 }
 
+inline void getParticleVbIbLen(int &vbLen, int &ibLen) {
+    vbLen = 4;
+    ibLen = 6;
+}
+
+template <typename VtxOutIter, typename IdxOutIter>
+void makeParticle(float size, VtxOutIter vtxIter, IdxOutIter idxIter) {
+    float h = size / 2.0;
+    *vtxIter = GenericVertex    (-h, -h, 0, 0, 0, -1, 0, 0, 1, 0, 0, 0, 0, -1);
+    *(++vtxIter) = GenericVertex(-h,  h, 0, 0, 0, -1, 0, 1, 1, 0, 0, 0, 0, -1);
+    *(++vtxIter) = GenericVertex( h,  h, 0, 0, 0, -1, 1, 1, 1, 0, 0, 0, 0, -1);
+    *(++vtxIter) = GenericVertex( h, -h, 0, 0, 0, -1, 1, 0, 1, 0, 0, 0, 0, -1);
+    *idxIter = 0;
+    *(++idxIter) = 2;
+    *(++idxIter) = 3;
+    *(++idxIter) = 0;
+    *(++idxIter) = 1;
+    *(++idxIter) = 2;
+}
+
 #endif

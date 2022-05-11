@@ -16,9 +16,8 @@
 #include <fstream>
 #include <iostream>
 #include <sstream>
-#include <sstream>
 #include <unordered_map>
-
+#include <cmath>
 
 #define GLEW_STATIC
 #include "GL/glew.h"
@@ -42,7 +41,7 @@
 
 //insert utils
 #include "sgutils.h"
-
+#define DEFR ((float)rand()/RAND_MAX)
 using namespace std;
 
 // G L O B A L S ///////////////////////////////////////////////////
@@ -106,13 +105,13 @@ static double g_arcballScale = 1;
 
 // --------- Materials
 // This should replace all the contents in the Shaders section, e.g., g_numShaders, g_shaderFiles, and so on
-static shared_ptr<Material> g_redDiffuseMat,
-                            g_blueDiffuseMat,
-                            g_bumpFloorMat,
+static shared_ptr<Material> g_bumpFloorMat,
                             g_arcballMat,
                             g_pickingMat,
                             g_lightMat,
-                            g_eyeMat;
+                            g_logMat,
+                            g_smokeMat,
+                            g_flameMat;
 
 shared_ptr<Material> g_overridingMaterial;
 
@@ -122,7 +121,7 @@ typedef SgGeometryShapeNode MyShapeNode;
 
 //
 static shared_ptr<SgRootNode> g_world;
-static shared_ptr<SgRbtNode> g_skyNode, g_groundNode, g_robot1Node, g_robot2Node, g_light1Node, g_light2Node, g_eye1Node, g_eye2Node;
+static shared_ptr<SgRbtNode> g_skyNode, g_groundNode, g_light1Node, g_light2Node, g_fireNode;
 static shared_ptr<SgRbtNode> g_currentPickedRbtNode; // used later when you do picking
 // PSET 7
 static vector<shared_ptr<SgRbtNode> > dump;
@@ -134,12 +133,20 @@ static list<vector<RigTForm> >::iterator nextNextFrame = keyFrames.begin();
 //
 
 // Vertex buffer and index buffer associated with the ground and cube geometry
-static shared_ptr<Geometry> g_ground, g_cube, g_sphere;
+static shared_ptr<Geometry> g_ground, g_cube, g_sphere, g_particle;
 
 
 // --------- Scene
 // For Simulation
 static double g_lastFrameClock;
+static int g_numParticles = 30;
+static int g_minParticleLifespanMS = 300;
+static float g_flameSpeed = 0.07;
+static float g_particleSize = 0.5;
+static vector<shared_ptr<SgRbtNode> > g_flameParticles;
+static vector<float> g_flameParticleLifespans;
+static vector<shared_ptr<SgRbtNode> > g_smokeParticles;
+static vector<float> g_smokeParticleLifespans;
 
 
 ///////////////// END OF G L O B A L S
@@ -180,13 +187,22 @@ static void initSphere() {
     g_sphere.reset(new SimpleIndexedGeometryPNTBX(&vtx[0], &idx[0], vtx.size(), idx.size()));
 }
 
+static void initParticle() {
+    int ibLen, vbLen;
+    getParticleVbIbLen(vbLen, ibLen);
+    vector<VertexPNTBX> vtx(vbLen);
+    vector<unsigned short> idx(ibLen);
+    makeParticle(g_particleSize, vtx.begin(), idx.begin());
+    g_particle.reset(new SimpleIndexedGeometryPNTBX(&vtx[0], &idx[0], vbLen, ibLen));
+}
+
 // takes a projection matrix and send to the the shaders
 inline void sendProjectionMatrix(Uniforms& uniforms, const Matrix4& projMatrix) {
     uniforms.put("uProjMatrix", projMatrix);
 }
 
 static shared_ptr<SgRbtNode> getNodeFromObjId(ObjId objId) {
-    shared_ptr<SgRbtNode> nodesArray[] = {g_skyNode, g_robot1Node, g_robot2Node};
+    shared_ptr<SgRbtNode> nodesArray[] = {g_skyNode};
     return nodesArray[objId];
 }
 
@@ -290,13 +306,14 @@ static void drawStuff(bool picking) {
 
     // get world space coordinates of the light
     Cvec3 light1 = getPathAccumRbt(g_world, g_light1Node).getTranslation();
-    Cvec3 light2 = getPathAccumRbt(g_world, g_light2Node).getTranslation();
+    Cvec3 fireLight = getPathAccumRbt(g_world, g_fireNode).getTranslation() + Cvec3(0,1,0);
 
     const Cvec3 eyeLight1 = Cvec3(invEyeRbt * Cvec4(light1, 1));
-    const Cvec3 eyeLight2 = Cvec3(invEyeRbt * Cvec4(light2, 1));
+    const Cvec3 eyeFireLight = Cvec3(invEyeRbt * Cvec4(fireLight, 1));
     // send the eye space coordinates of lights to uniforms
+
     uniforms.put("uLight", eyeLight1);
-    uniforms.put("uLight2", eyeLight2);
+    uniforms.put("uLight2", eyeFireLight);
     
     if (!picking) {
         // initialize the drawer with our uniforms, as opposed to curSS
@@ -322,6 +339,9 @@ static void drawStuff(bool picking) {
                                                     g_mouseClickY * g_hScale);
         if (g_currentPickedRbtNode == g_groundNode || !g_currentPickedRbtNode)
             g_currentPickedRbtNode = g_skyNode;   // set to NULL
+        if (g_currentPickedRbtNode != g_skyNode && g_currentPickedRbtNode != g_groundNode 
+        && g_currentPickedRbtNode != g_light1Node && g_currentPickedRbtNode != g_light2Node)
+            g_currentPickedRbtNode = g_fireNode;
     }
 }
 
@@ -417,6 +437,28 @@ void animationUpdate() {
     }
 }
 
+static void flameSimulationUpdate() {
+    // Update
+    for (int i = 0; i < g_flameParticles.size(); i++) {
+        if (g_flameParticleLifespans[i] < 0) {
+            g_flameParticleLifespans[i] = (1 + DEFR) * g_minParticleLifespanMS;
+            (*g_flameParticles[i]).setRbt(RigTForm(Cvec3(DEFR - 0.5, 0, DEFR - 0.5) + (*g_fireNode).getRbt().getTranslation(), (*g_flameParticles[i]).getRbt().getRotation()));
+        } else {
+            g_flameParticleLifespans[i] -= (1.0 / g_framesPerSecond) * 1000;
+            (*g_flameParticles[i]).setRbt(RigTForm((*g_flameParticles[i]).getRbt().getTranslation() + Cvec3((DEFR - 0.5) * g_flameSpeed, g_flameSpeed, (DEFR - 0.5) * g_flameSpeed), (*g_flameParticles[i]).getRbt().getRotation()));
+        }
+    }
+    for (int i = 0; i < g_smokeParticles.size(); i++) {
+        if (g_smokeParticleLifespans[i] < 0) {
+            g_smokeParticleLifespans[i] = (1 + DEFR) * g_minParticleLifespanMS * 5;
+            (*g_smokeParticles[i]).setRbt(RigTForm(Cvec3(DEFR - 0.5, 0, DEFR - 0.5) + (*g_fireNode).getRbt().getTranslation(), (*g_smokeParticles[i]).getRbt().getRotation()));
+        } else {
+            g_smokeParticleLifespans[i] -= (1.0 / g_framesPerSecond) * 1000;
+            (*g_smokeParticles[i]).setRbt(RigTForm((*g_smokeParticles[i]).getRbt().getTranslation() + Cvec3((DEFR - 0.5) * g_flameSpeed, g_flameSpeed/2.0, (DEFR - 0.5) * g_flameSpeed), (*g_smokeParticles[i]).getRbt().getRotation()));
+        }
+    }
+
+}
 
 static void reshape(GLFWwindow * window, const int w, const int h) {
     int width, height;
@@ -504,6 +546,38 @@ static RigTForm makeMixedFrame(const RigTForm &objRbt, const RigTForm &eyeRbt) {
     return transFact(objRbt) * linFact(eyeRbt);
 }
 
+// From OpenGL: http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-17-quaternions/
+static Quat RotationBetweenVectors(Cvec3 start, Cvec3 dest) {
+    start = normalize(start);
+    dest = normalize(dest);
+    float cosTheta = dot(start, dest);
+    float s = sqrt( (1+cosTheta)*2 );
+    float invs = 1 / s;
+    Cvec3 rotationAxis = cross(start, dest) * invs;
+    return Quat(s * 0.5f, rotationAxis);
+}
+
+static void updateParticleRot() {
+    RigTForm skyRbt = getPathAccumRbt(g_world, g_skyNode);
+    for (int i = 0; i < g_flameParticles.size(); i++) {
+        RigTForm skyRbtWithRespectToParticle = inv(getPathAccumRbt(g_world, g_flameParticles[i])) * skyRbt;
+        const Cvec3 v0 = Cvec3(0, 0, 1);
+        const Cvec3 v1 = normalize(skyRbtWithRespectToParticle.getTranslation());
+        RigTForm rot = RigTForm((*g_flameParticles[i]).getRbt().getTranslation(), (*g_flameParticles[i]).getRbt().getRotation() * RotationBetweenVectors(v0, v1));
+        
+        (*g_flameParticles[i]).setRbt(rot);
+    }
+    for (int i = 0; i < g_smokeParticles.size(); i++) {
+        RigTForm skyRbtWithRespectToParticle = inv(getPathAccumRbt(g_world, g_smokeParticles[i])) * skyRbt;
+        const Cvec3 v0 = Cvec3(0, 0, 1);
+        const Cvec3 v1 = normalize(skyRbtWithRespectToParticle.getTranslation());
+        RigTForm rot = RigTForm((*g_smokeParticles[i]).getRbt().getTranslation(), (*g_smokeParticles[i]).getRbt().getRotation() * RotationBetweenVectors(v0, v1));
+        
+        (*g_smokeParticles[i]).setRbt(rot);
+    }
+}
+
+
 static void motion(GLFWwindow *window, double x, double y) {
     if (!g_mouseClickDown)
         return;
@@ -533,6 +607,7 @@ static void motion(GLFWwindow *window, double x, double y) {
         O = doMtoOwrtA(My, O, B);
     }
     (*g_currentPickedRbtNode).setRbt(O);
+    updateParticleRot();
 
     g_mouseClickX += dx;
     g_mouseClickY += dy;
@@ -813,14 +888,6 @@ static void initMaterials() {
     Material diffuse("./shaders/basic-gl3.vshader", "./shaders/diffuse-gl3.fshader");
     Material solid("./shaders/basic-gl3.vshader", "./shaders/solid-gl3.fshader");
 
-    // copy diffuse prototype and set red color
-    g_redDiffuseMat.reset(new Material(diffuse));
-    g_redDiffuseMat->getUniforms().put("uColor", Cvec3f(1, 0, 0));
-
-    // copy diffuse prototype and set blue color
-    g_blueDiffuseMat.reset(new Material(diffuse));
-    g_blueDiffuseMat->getUniforms().put("uColor", Cvec3f(0, 0, 1));
-
     // normal mapping material
     g_bumpFloorMat.reset(new Material("./shaders/normal-gl3.vshader", "./shaders/normal-gl3.fshader"));
     g_bumpFloorMat->getUniforms().put("uTexColor", shared_ptr<ImageTexture>(new ImageTexture("Fieldstone.ppm", true)));
@@ -835,11 +902,25 @@ static void initMaterials() {
     g_lightMat.reset(new Material(solid));
     g_lightMat->getUniforms().put("uColor", Cvec3f(1, 1, 1));
 
-    g_eyeMat.reset(new Material(diffuse));
-    g_eyeMat->getUniforms().put("uColor", Cvec3f(0, 0, 0));
-
     // pick shader
     g_pickingMat.reset(new Material("./shaders/basic-gl3.vshader", "./shaders/pick-gl3.fshader"));
+
+    // flame material
+    g_flameMat.reset(new Material("./shaders/basic-gl3.vshader", "./shaders/flame-gl3.fshader"));
+    g_flameMat->getUniforms().put("uColor", Cvec3f(1, 0, 0));
+    g_flameMat->getUniforms().put("uTexColor", shared_ptr<ImageTexture>(new ImageTexture("circle.ppm", true)));
+    g_flameMat->getRenderStates()
+        .blendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA) // set blending mode
+        .enable(GL_BLEND);                                // enable blending
+        // .disable(GL_DEPTH_MASK);                         // disable depth mass
+    // smoke material
+    g_smokeMat.reset(new Material("./shaders/basic-gl3.vshader", "./shaders/smoke-gl3.fshader"));
+    g_smokeMat->getUniforms().put("uColor", Cvec3f(1, 0, 0));
+    g_smokeMat->getUniforms().put("uTexColor", shared_ptr<ImageTexture>(new ImageTexture("circle.ppm", true)));
+    // log material
+    g_logMat.reset(new Material(diffuse));
+    g_logMat->getUniforms().put("uColor", Cvec3f(.36, .26, .15));
+
 
 };
 
@@ -847,109 +928,49 @@ static void initGeometry() {
     initGround();
     initCubes();
     initSphere();
-}
-
-static void constructRobot(shared_ptr<SgTransformNode> base, shared_ptr<Material> material) {
-
-    const float ARM_LEN = 0.7,
-                ARM_THICK = 0.25,
-                LEG_LEN = 0.9,
-                LEG_THICK = 0.3,
-                TORSO_LEN = 1.5,
-                TORSO_THICK = 0.25,
-                TORSO_WIDTH = 1,
-                HEAD_SIZE = 0.25;
-    const int NUM_JOINTS = 10,
-              NUM_SHAPES = 10;
-
-    struct JointDesc {
-        int parent;
-        float x, y, z;
-    };
-
-    JointDesc jointDesc[NUM_JOINTS] = {
-        {-1}, // torso
-        {0,  TORSO_WIDTH/2, TORSO_LEN/2, 0}, // upper right arm
-        {1,  ARM_LEN, 0, 0}, // lower right arm
-        {0,  -TORSO_WIDTH/2, TORSO_LEN/2, 0}, // upper left arm
-        {3,  -ARM_LEN, 0, 0}, // lower left arm
-        {0,  TORSO_WIDTH/2, -TORSO_LEN/2, 0}, // upper right leg
-        {5,  0, -LEG_LEN, 0}, // lower right leg
-        {0,  -TORSO_WIDTH/2, -TORSO_LEN/2, 0}, // upper left leg
-        {7,  0, -LEG_LEN, 0}, // lower left leg
-        {0,  0, TORSO_LEN/2, 0}, // head
-
-    };
-
-    struct ShapeDesc {
-        int parentJointId;
-        float x, y, z, sx, sy, sz;
-        shared_ptr<Geometry> geometry;
-    };
-
-    ShapeDesc shapeDesc[NUM_SHAPES] = {
-        {0, 0,         0, 0, TORSO_WIDTH, TORSO_LEN, TORSO_THICK, g_cube}, // torso
-        {1, ARM_LEN/2, 0, 0, ARM_LEN, ARM_THICK, ARM_THICK, g_cube}, // upper right arm
-        {2, ARM_LEN/2, 0, 0, ARM_LEN/2, ARM_THICK/2, ARM_THICK/2, g_sphere}, // lower right arm
-        {3, -ARM_LEN/2, 0, 0, ARM_LEN, ARM_THICK, ARM_THICK, g_cube}, // upper left arm
-        {4, -ARM_LEN/2, 0, 0, ARM_LEN/2, ARM_THICK/2, ARM_THICK/2, g_sphere}, // lower left arm
-        {5, 0, -LEG_LEN/2, 0, LEG_THICK, LEG_LEN, LEG_THICK, g_cube}, // upper right leg
-        {6, 0, -LEG_LEN/2, 0, LEG_THICK/2, LEG_LEN/2, LEG_THICK/2, g_sphere}, // lower right leg
-        {7, 0, -LEG_LEN/2, 0, LEG_THICK, LEG_LEN, LEG_THICK, g_cube}, // upper left leg
-        {8, 0, -LEG_LEN/2, 0, LEG_THICK/2, LEG_LEN/2, LEG_THICK/2, g_sphere}, // lower left leg
-        {9, 0, HEAD_SIZE, 0, HEAD_SIZE, HEAD_SIZE, HEAD_SIZE, g_sphere}, // head    
-    };
-
-    shared_ptr<SgTransformNode> jointNodes[NUM_JOINTS];
-
-    for (int i = 0; i < NUM_JOINTS; ++i) {
-        if (jointDesc[i].parent == -1)
-            jointNodes[i] = base;
-        else {
-            jointNodes[i].reset(new SgRbtNode(RigTForm(Cvec3(jointDesc[i].x, jointDesc[i].y, jointDesc[i].z))));
-            jointNodes[jointDesc[i].parent]->addChild(jointNodes[i]);
-        }
-    }
-    // The new MyShapeNode takes in a material as opposed to color
-    for (int i = 0; i < NUM_SHAPES; ++i) {
-      shared_ptr<SgGeometryShapeNode> shape(
-        new MyShapeNode(shapeDesc[i].geometry,
-                        material, // USE MATERIAL as opposed to color
-                        Cvec3(shapeDesc[i].x, shapeDesc[i].y, shapeDesc[i].z),
-                        Cvec3(0, 0, 0),
-                        Cvec3(shapeDesc[i].sx, shapeDesc[i].sy, shapeDesc[i].sz)));
-      jointNodes[shapeDesc[i].parentJointId]->addChild(shape);
-    }
+    initParticle();
 }
 
 static void initScene() {
     g_world.reset(new SgRootNode());
 
-    g_light1Node.reset(new SgRbtNode(RigTForm(Cvec3(1.5, 0.25, -8.0))));
-    g_light2Node.reset(new SgRbtNode(RigTForm(Cvec3(-1.5, 0.25, -8.0))));
+    g_light1Node.reset(new SgRbtNode(RigTForm(Cvec3(1.5, 8.0, -8.0))));
+    // g_light2Node.reset(new SgRbtNode(RigTForm(Cvec3(-1.5, 8.0, 8.0))));
     g_light1Node->addChild(shared_ptr<MyShapeNode>(new MyShapeNode(g_sphere, g_lightMat, Cvec3())));
-    g_light2Node->addChild(shared_ptr<MyShapeNode>(new MyShapeNode(g_sphere, g_lightMat, Cvec3())));
+    // g_light2Node->addChild(shared_ptr<MyShapeNode>(new MyShapeNode(g_sphere, g_lightMat, Cvec3())));
 
-    g_skyNode.reset(new SgRbtNode(RigTForm(Cvec3(0.0, 0.25, 4.0))));
+    g_skyNode.reset(new SgRbtNode(RigTForm(Cvec3(0.0, 2.0, 8.0))));
     g_currentPickedRbtNode = g_skyNode;
+
     g_groundNode.reset(new SgRbtNode());
     g_groundNode->addChild(shared_ptr<MyShapeNode>(new MyShapeNode(g_ground, g_bumpFloorMat, Cvec3(0, g_groundY, 0))));
 
-    g_robot1Node.reset(new SgRbtNode(RigTForm(Cvec3(-2, 1, 0))));
-    g_robot2Node.reset(new SgRbtNode(RigTForm(Cvec3(2, 1, 0))));
-
-    constructRobot(g_robot1Node, g_redDiffuseMat); // a Red robot
-    constructRobot(g_robot2Node, g_blueDiffuseMat); // a Blue robot
-    
-    
-
+    g_fireNode.reset(new SgRbtNode());
+    g_fireNode->addChild(shared_ptr<MyShapeNode>(new MyShapeNode(g_cube, g_logMat, Cvec3(0, 0, 0), Cvec3(0, 0, 0), Cvec3(4, .7, .7))));
+    g_fireNode->addChild(shared_ptr<MyShapeNode>(new MyShapeNode(g_cube, g_logMat, Cvec3(0, 0, 0), Cvec3(0, 60, 0), Cvec3(4, .7, .7))));
+    g_fireNode->addChild(shared_ptr<MyShapeNode>(new MyShapeNode(g_cube, g_logMat, Cvec3(0, 0, 0), Cvec3(0, 120, 0), Cvec3(4, .7, .7))));
     g_world->addChild(g_skyNode);
     g_world->addChild(g_groundNode);
     g_world->addChild(g_light1Node);
-    g_world->addChild(g_light2Node);
-    // g_world->addChild(g_robot1Node);
-    // g_world->addChild(g_robot2Node);
+    // g_world->addChild(g_light2Node);
+    g_world->addChild(g_fireNode);
+    // Create Particles
+    srand((unsigned)time(NULL));
+    for (int i = 0; i < g_numParticles; i++) {
+        shared_ptr<SgRbtNode> flame; flame.reset(new SgRbtNode(RigTForm(Cvec3(DEFR - 0.5, (DEFR - 0.5) + 1, DEFR - 0.5))));
+        g_flameParticles.push_back(flame);
+        g_flameParticleLifespans.push_back((1.0 + DEFR) * g_minParticleLifespanMS);
+        flame->addChild(shared_ptr<MyShapeNode>(new MyShapeNode(g_particle, g_flameMat, Cvec3(0, 0, 0), Cvec3(0, 180, 0))));
+        g_world->addChild(flame);
+        // shared_ptr<SgRbtNode> smoke; smoke.reset(new SgRbtNode(RigTForm(Cvec3(DEFR - 0.5, (DEFR - 0.5) + 1, DEFR - 0.5))));
+        // g_smokeParticles.push_back(smoke);
+        // g_smokeParticleLifespans.push_back((1.0 + DEFR) * g_minParticleLifespanMS * 4);
+        // smoke->addChild(shared_ptr<MyShapeNode>(new MyShapeNode(g_particle, g_smokeMat, Cvec3(0, 0, 0), Cvec3(0, 180, 0))));
+        // g_world->addChild(smoke);
+    }
+        
 
+    updateParticleRot();
     dumpSgRbtNodes(g_world, dump);
 }
 
@@ -959,6 +980,7 @@ static void glfwLoop() {
         double thisTime = glfwGetTime();
         if( thisTime - g_lastFrameClock >= 1. / g_framesPerSecond) {
             animationUpdate();
+            flameSimulationUpdate();
             display();
             g_lastFrameClock = thisTime;
         }
