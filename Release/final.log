@@ -1,0 +1,1689 @@
+﻿  final.cpp
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\quat.h(163,14): warning C4244: 'initializing': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=double
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\quat.h(173,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,30): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,22): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,14): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,66): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,55): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,44): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,30): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,22): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,14): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,66): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,55): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,44): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,97): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,83): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,30): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,22): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,14): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,66): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,55): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,44): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,97): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,83): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,41): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,29): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,17): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,83): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,70): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,57): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(69,38): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(142,33): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(143,34): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(219,63): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(341,67): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(340,70): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(361,75): warning C4244: 'argument': conversion from 'GLdouble' to 'GLclampf', possible loss of data
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(361,60): warning C4244: 'argument': conversion from 'GLdouble' to 'GLclampf', possible loss of data
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(361,45): warning C4244: 'argument': conversion from 'GLdouble' to 'GLclampf', possible loss of data
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(361,30): warning C4244: 'argument': conversion from 'GLdouble' to 'GLclampf', possible loss of data
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(389,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(392,23): warning C4244: 'initializing': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=double
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(393,28): warning C4244: 'initializing': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=double
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(394,29): warning C4244: 'initializing': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=double
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(395,28): warning C4244: 'initializing': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=double
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(424,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(435,35): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(446,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(452,70): warning C4244: '-=': conversion from 'double' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(457,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(463,70): warning C4244: '-=': conversion from 'double' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(561,20): warning C4244: 'initializing': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=double
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(570,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(578,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(697,35): warning C4018: '<': signed/unsigned mismatch
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(711,35): warning C4018: '<': signed/unsigned mismatch
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(727,39): warning C4018: '<': signed/unsigned mismatch
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(736,39): warning C4018: '<': signed/unsigned mismatch
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(747,39): warning C4018: '<': signed/unsigned mismatch
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(792,43): warning C4018: '<': signed/unsigned mismatch
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(881,59): warning C4305: 'argument': truncation from 'double' to 'GLclampf'
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(938,63): warning C4305: 'argument': truncation from 'double' to 'const T'
+          with
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(975,57): warning C4244: 'argument': conversion from 'double' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(980,83): warning C4244: 'argument': conversion from 'double' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometrymaker.h(35,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(165): message : see reference to function template instantiation 'void makePlane<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,std::_Vector_iterator<std::_Vector_val<std::_Simple_types<unsigned short>>>>(float,VtxOutIter,IdxOutIter)' being compiled
+          with
+          [
+              _Ty=VertexPNTBX,
+              VtxOutIter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<VertexPNTBX>>>,
+              IdxOutIter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<unsigned short>>>
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometrymaker.h(55,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(177): message : see reference to function template instantiation 'void makeCube<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,std::_Vector_iterator<std::_Vector_val<std::_Simple_types<unsigned short>>>>(float,VtxOutIter,IdxOutIter)' being compiled
+          with
+          [
+              _Ty=VertexPNTBX,
+              VtxOutIter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<VertexPNTBX>>>,
+              IdxOutIter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<unsigned short>>>
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometrymaker.h(145,21): warning C4244: 'initializing': conversion from '_Ty' to 'float', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(188): message : see reference to function template instantiation 'void makeSphere<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,std::_Vector_iterator<std::_Vector_val<std::_Simple_types<unsigned short>>>>(float,int,int,VtxOutIter,IdxOutIter)' being compiled
+          with
+          [
+              _Ty=VertexPNTBX,
+              VtxOutIter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<VertexPNTBX>>>,
+              IdxOutIter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<unsigned short>>>
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometrymaker.h(146,21): warning C4244: 'initializing': conversion from '_Ty' to 'float', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometrymaker.h(147,21): warning C4244: 'initializing': conversion from '_Ty' to 'float', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometrymaker.h(150,44): warning C4244: 'argument': conversion from '_Ty' to 'const T', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometrymaker.h(150,22): warning C4244: 'argument': conversion from '_Ty' to 'const T', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometrymaker.h(154,72): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometrymaker.h(154,54): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometrymaker.h(179,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\final.cpp(197): message : see reference to function template instantiation 'void makeParticle<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,std::_Vector_iterator<std::_Vector_val<std::_Simple_types<unsigned short>>>>(float,VtxOutIter,IdxOutIter)' being compiled
+          with
+          [
+              _Ty=VertexPNTBX,
+              VtxOutIter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<VertexPNTBX>>>,
+              IdxOutIter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<unsigned short>>>
+          ]
+  glsupport.cpp
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\glsupport.cpp(33,16): warning C4244: 'initializing': conversion from 'std::streamoff' to 'size_t', possible loss of data
+  scenegraph.cpp
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,30): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,22): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,14): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,66): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,55): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,44): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,30): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,22): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,14): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,66): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,55): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,44): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,97): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,83): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,30): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,22): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,14): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,66): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,55): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,44): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,97): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,83): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,41): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,29): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,17): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,83): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,70): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,57): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\quat.h(163,14): warning C4244: 'initializing': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=double
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\quat.h(173,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  geometry.cpp
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,30): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,22): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,14): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,66): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,55): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,44): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,30): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,22): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,14): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,66): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,55): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,44): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,97): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,83): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,30): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,22): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,14): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,66): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,55): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,44): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,97): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,83): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,41): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,29): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,17): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,83): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,70): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,57): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+  material.cpp
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,30): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,22): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,14): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,66): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,55): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,44): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,30): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,22): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,14): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,66): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,55): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,44): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,97): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,83): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,30): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,22): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,14): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,66): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,55): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,44): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,97): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,83): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,41): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,29): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,17): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,83): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,70): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,57): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+  picker.cpp
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,30): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,22): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,14): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,66): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,55): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,44): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,30): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,22): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,14): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,66): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,55): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,44): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,97): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,83): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,30): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,22): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,14): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,66): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,55): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,44): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,97): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,83): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,41): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,29): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,17): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,83): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,70): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,57): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\quat.h(163,14): warning C4244: 'initializing': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=double
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\quat.h(173,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  ppm.cpp
+  renderstates.cpp
+  texture.cpp
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,30): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,22): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,14): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,66): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,55): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(315,44): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,30): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,22): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,14): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,66): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,55): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,44): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,97): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(350,83): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,30): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,22): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,14): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,66): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,55): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,44): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,97): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(391,83): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,41): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,29): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,17): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,83): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,70): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\geometry.h(392,57): warning C4244: 'argument': conversion from 'const T' to 'const T', possible loss of data
+          with
+          [
+              T=double
+          ]
+          and
+          [
+              T=float
+          ]
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 2779 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+LINK : warning LNK4286: symbol '___glewUniform3fv' defined in 'glew32s.lib(glew.obj)' is imported by 'picker.obj'
+LINK : warning LNK4286: symbol '___glewUniformMatrix4fv' defined in 'glew32s.lib(glew.obj)' is imported by 'picker.obj'
+glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\Release\vc120.pdb'; linking object as if no debug info
+  final.vcxproj -> C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\Release\final.exe
