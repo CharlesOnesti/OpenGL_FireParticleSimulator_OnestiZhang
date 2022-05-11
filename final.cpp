@@ -139,8 +139,9 @@ static shared_ptr<Geometry> g_ground, g_cube, g_sphere, g_particle;
 static double g_lastFrameClock;
 static int g_numParticles = 90;
 static int g_minParticleLifespanMS = 200;
-static float g_flameSpeed = 0.12;
-static float g_particleSize = 1.2;
+static float g_flameSpeed = 0.2;
+static float g_flameSpread = 0.2;
+static float g_particleSize = 1.5;
 
 static vector<shared_ptr<SgRbtNode> > g_flameParticles;
 static vector<float> g_flameParticleLifespans;
@@ -451,7 +452,7 @@ static void flameSimulationUpdate() {
         } else {
             g_flameParticleLifespans[i] -= (1.0 / g_framesPerSecond) * 1000;
             g_flameMats[i]->getUniforms().put("uLifespan", g_flameParticleLifespans[i]);
-            (*g_flameParticles[i]).setRbt(RigTForm((*g_flameParticles[i]).getRbt().getTranslation() + Cvec3((DEFR - 0.5) * g_flameSpeed, g_flameSpeed, (DEFR - 0.5) * g_flameSpeed), (*g_flameParticles[i]).getRbt().getRotation()));
+            (*g_flameParticles[i]).setRbt(RigTForm((*g_flameParticles[i]).getRbt().getTranslation() + Cvec3((DEFR - 0.5) * g_flameSpread, g_flameSpeed, (DEFR - 0.5) * g_flameSpread), (*g_flameParticles[i]).getRbt().getRotation()));
         }
     }
     for (int i = 0; i < g_smokeParticles.size(); i++) {
