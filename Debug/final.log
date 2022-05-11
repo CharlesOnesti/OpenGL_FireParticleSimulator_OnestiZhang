@@ -1,0 +1,7 @@
+﻿final.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4217: symbol '___glewUniform3fv' defined in 'glew32s.lib(glew.obj)' is imported by 'picker.obj' in function '"void __cdecl _helper::genericGlUniformv(int,int,class Cvec<float,3> const *)" (?genericGlUniformv@_helper@@YAXHHPBV?$Cvec@M$02@@@Z)'
+LINK : warning LNK4217: symbol '___glewUniformMatrix4fv' defined in 'glew32s.lib(glew.obj)' is imported by 'picker.obj' in function '"void __cdecl _helper::genericGlUniformMatrix4v(int,int,class Cvec<float,16> const *)" (?genericGlUniformMatrix4v@_helper@@YAXHHPBV?$Cvec@M$0BA@@@@Z)'
+glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\Debug\vc120.pdb'; linking object as if no debug info
+  final.vcxproj -> C:\Users\jonzh\OneDrive\Desktop\Jonny Zhang\Classes\CS175\CS175_OnestiZhang\Debug\final.exe
